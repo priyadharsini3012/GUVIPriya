@@ -1,0 +1,150 @@
+Program to check if the given number is even or not
+package JavaTask1;
+
+public class CheckEvenNumber {
+	public static void main(String[] args) {
+		int a = 10;
+		
+		if (a % 2 == 0) {
+			
+			System.out.println("The given number is even");
+			
+		} else {
+			System.out.println("The given number is odd");
+		}
+		
+	}
+
+}
+-------------------------------------------------------
+Print alphabets
+package JavaTask1;
+
+public class Alphabets {
+	
+public static void main(String[] args) {
+	int x;
+	System.out.println("Alphabets are printed from A-Z:");
+	
+	for (x = 65; x <= 90; x++) {
+		System.out.println((char)x +" ");
+	}
+	
+}
+}
+-------------------------------------
+Number Swap
+package JavaTask1;
+
+public class NumberSwap {
+	public static void main(String[] args) {
+		int a = 10;
+		int b = 20;
+		System.out.println("Before swapping value of a is " + a + " and value of b is " + b);
+		a = (a + b) - (b=a);
+		System.out.println("After swapping value of a is " + a + " and value of b is " + b);
+	}
+	}
+------------------------------
+Prime Number
+package JavaTask1;
+
+public class PrimeNumber {
+	public static void main(String[] args) {
+		int num = 31;
+	    boolean flag = false;
+		    if (num == 0 || num == 1) {
+	        flag = true;
+	    }
+	    for (int i = 2; i <= num / 2; ++i) {
+	      	      if (num % i == 0) {
+	        flag = true;
+	        break;
+	      }
+	    }
+	    if (!flag)
+	      System.out.println(num + " is a prime number.");
+	    else
+	      System.out.println(num + " is not a prime number.");
+	  }
+}
+---------------------------------------------------
+Factorial
+package JavaTask1;
+
+public class Factorial {
+	public static void main(String[] args) {
+		 int i,fact = 1;  
+		  int n = 4; 
+		  for(i = 1; i <= n; i++){    
+		      fact=fact*i;    
+		  }    
+		  System.out.println("Factorial of "+n+" is: "+fact);    
+		 }  
+	}
+------------------------------------------------------
+String Length
+package JavaTask1;
+
+public class StringLength {
+	
+public static void main(String[] args) {
+
+	String msg = "Guvi Geek";
+	System.out.println("Lenght of given string is:" +msg.length());
+	
+	}
+}
+-------------------------------------------------------------
+Print text 10 times
+package JavaTask1;
+
+public class PrintText {
+
+	public static void main(String[] args) {
+		
+		String msg = "Welcome to Guvi";
+		for (int i = 0; i < 10; i++) {
+			System.out.println(msg);
+		}
+		
+	}
+}
+---------------------------------------------
+Senior Citizen or not
+package JavaTask1;
+
+public class SeniorCitizen {
+	public static void main(String[] args) {
+		int i = 30;
+		int j = 70;
+				if (i>=60) {
+			System.out.println("The person is a Senior Citizen");
+			
+		} else {
+			System.out.println("The person is not a Senior Citizen");
+		}
+				if (j>=60) {
+			System.out.println("The person is a Senior Citizen");
+			
+		} else {
+			System.out.println("The person is not a Senior Citizen");
+		}
+	}
+}
+------------------------------------------------
+Number of digits
+package JavaTask1;
+
+public class DigitsInInteger {
+	public static void main(String[] args) {
+		int count = 0, num = 983452;
+
+	    while (num != 0) {
+	      num /= 10;
+	      ++count;
+	    }
+
+	    System.out.println("Number of digits: " + count);
+	}
+}
